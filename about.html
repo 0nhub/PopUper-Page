@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>popuper | About</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+
+	<style>
+	</style>
+</head>
+<body>
+    
+<!--Hamburger button-->
+	<div class="hamburger-menu__button">
+		<div class="hamburger-menu hamburger-menu--default">
+    		<div id="hamburger-button" class="hamburger-button"></div>
+    		<div id="dark-overlay" class="dark-overlay" style="z-index: 998;"></div>
+    		<div id="hamburger-drawer" class="hamburger-drawer" style="z-index: 999;">
+	        	<div class="hamburger-drawer__header">
+	            	<span class="hamburger-drawer__title">popuper</span>
+		            <div id="close-drawer-button" class="close-drawer-button">
+		                <svg viewBox="0 0 16 16" width="16" height="16"><g class="nc-icon-wrapper" fill="#202945"><line fill="none" stroke="#202945" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="13.5" y1="2.5" x2="2.5" y2="13.5" data-cap="butt"></line> <line fill="none" stroke="#202945" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.5" y1="2.5" x2="13.5" y2="13.5" data-cap="butt"></line> </g></svg>
+		            </div>
+		        </div>
+		       
+<!--This is the content of the menu space-->
+               <div class="hamburger-drawer__top-section">
+		            <div class="hamburger-drawer__nav-link"><a href="#">About</a></div>
+		            <div class="hamburger-drawer__nav-link"><a href="#">Support</a></div>
+		            <div class="hamburger-drawer__nav-link"><a href="#">Follow</a></div>
+                    <div class="hamburger-drawer__nav-link"><a href="#">Contact</a></div>
+		        </div>
+		        <div class="hamburger-drawer__bottom-section">
+		            <div class="hamburger-drawer__nav-link"><a href="#">Chrome extension</a></div>
+		            <div class="hamburger-drawer__nav-link"><a href="#">Safari extension</a></div>
+		            <div class="hamburger-drawer__nav-link"><a href="#">Firefox extension</a></div>
+		            <div class="hamburger-drawer__nav-link"><a href="#">Opera extension</a></div>
+		        </div>
+   
+<!--THIS SELECTION HAVE TO GO DOWN-->
+               <div class="hamburger-drawer__bottom-section">
+                    <div class="hamburger-drawer__nav-link"><a href="#">Cookies</a></div>
+                    <div class="hamburger-drawer__nav-link"><a href="#">Privacy</a></div>
+                    <div class="hamburger-drawer__nav-link"><a href="#">Terms</a></div>
+                </div>
+    		</div>
+		</div>
+    </div>
+
+    <!-- This is about page  -->
+    <div id="slide-one" class="slide_one_wrap">
+        <div class="logo_wrap">
+            <img src="img/p-logo.png" alt="" width="50px">
+        </div>
+        <div class="slide_one_container">
+            <header>
+                <h1 class="slide_one_title"> We transform all websites into a popup window</h1>
+            </header>
+            <div class="slide_one_form" id="slideOneWeb">
+                <div class="tabbuttons">
+                    <img src="img/safari-logo.png" alt="centered image" height="100"/>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="footer">
+        <a class="aro" href="faq.html">FAQ  </a>
+        <a class="aro"   href="https://www.popuper.org/extension"> Extension</a>
+        <a class="aro"   href="#"> Github</a>
+        <a class="aro"   href="https://www.popuper.org/terms"> Terms</a>
+        <a class="aro"   href="https://www.popuper.org/privacy"> Privacy</a>
+       
+        <br>
+        <p> </p>
+    </div>
+
+    
+	<div class="footer_notifications">
+		<div class="notifications_label" id="bottom_notifications">
+			<div class="n_img">
+				<img src="" alt="Logo">
+			</div>
+			<div class="n_label" onclick=""></div>
+			<div class="n_close" onclick="close_notifications();"><svg viewBox="0 0 16 16" width="16" height="16"><g class="nc-icon-wrapper" fill="#202945"><line fill="none" stroke="#202945" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="13.5" y1="2.5" x2="2.5" y2="13.5" data-cap="butt"></line> <line fill="none" stroke="#202945" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.5" y1="2.5" x2="13.5" y2="13.5" data-cap="butt"></line> </g></svg></div>
+		</div>
+	</div>
+
+	<!-- custom assets -->
+	<script type="text/javascript" src="custom.js"></script>
+
+	<script type="text/javascript">
+		// if(browserName=="Opera" || browserName=="Microsoft Internet Explorer" || browserName=="Chrome" || browserName=="Safari" || browserName=="Firefox"){
+		// 	// Call load notifications function
+		// 	load_notificatons(img_src, label, label_url);
+		// }
+		
+	</script>
+</body>
+</html>

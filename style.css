@@ -1,0 +1,874 @@
+/* Old existing CSS */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+* {
+    box-sizing: border-box;
+  }
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+html{
+    overflow-y: scroll;
+    font-family:  'Lato', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+body{
+    /* margin: 0;
+    padding: 0; */
+    /* display: -webkit-box; */
+    /* display: flex; */
+    min-height: 100vh;
+    font-family: Lato,sans-serif;
+    width: 100%;
+}
+
+.container{
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto
+}
+
+input[type=text],input[type=url]{
+    width: 100%;
+    border: 1px solid #eee;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;box-sizing: border-box}
+
+    input[type=submit],input[type=button]{
+        color: #fff;
+    background: #102854
+}
+
+input[type=text],input[type=url],input[type=submit],input[type=button]{
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 20px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+.main header{
+        text-align: center;
+    padding: 1px 0 30px
+}
+
+.main .container.form{
+    max-width: 820px
+}
+
+.main .container.form fieldset{
+    position: relative;
+    padding-right: 120px;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.main .container.form fieldset input[type=submit],input[type=button]{
+    position: absolute;
+    top: 1px;
+    right: 0;
+    min-width: 110px
+}
+
+.tabbuttons{
+    margin-top:  60px;
+    text-align:  center;
+}
+
+.btn{
+    background-color: #efefef;
+    border-radius: 17px;
+    display: inline-block;
+    cursor: pointer;
+    color: #8f888f;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 6px 23px;
+    margin: 5px;
+}
+
+.btn:hover {
+    color:  #FFFFFF;
+    background-color: #726d72;
+}
+
+.center_wrap {
+    padding-top: 125px;
+}
+
+/* Footer CSS */
+
+.footero {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.aro {
+    /* color: #ada5ae;  */
+    color: #03b5d2;
+    font-size: 100%; 
+    text-decoration: none;
+    /* font-family: Helvetica Neue; */
+    padding-left: 0.5em;
+}
+
+/* Old existing CSS END */
+
+
+/* Menu bar CSS */
+
+.hamburger-menu{
+    font-family: Proxima Nova,Helvetica Neue,Arial,sans-serif;
+}
+
+.hamburger-menu .hamburger-button{
+    display:inline-block;
+    background:url("data:image/svg+xml;charset=utf-8,%3Csvg height='16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg class='nc-icon-wrapper' fill='none' stroke='%23111' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10'%3E%3Cpath d='M1.5 2.5h14'/%3E%3Cpath data-color='color-2' d='M1.5 8.5h14'/%3E%3Cpath d='M1.5 14.5h14'/%3E%3C/g%3E%3C/svg%3E") 0 50% no-repeat;
+    height:16px;
+    width:16px;
+    margin:0 0 0 20px;
+    position: absolute;
+    right: 25px;
+    top: 22px;
+}
+
+.hamburger-menu .hamburger-button:hover{
+    cursor:pointer
+}
+
+.hamburger-menu .dark-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    display:none;
+    background:rgba(59,67,92,.4);
+    animation:a .2s
+}
+
+@media (min-width:990px){
+    .hamburger-menu .dark-overlay{
+        display:none
+    }
+}
+
+.hamburger-menu .hamburger-drawer{
+    display:none;
+    text-align:left;
+    width:200px;
+    background:#fff;
+    box-shadow:0 0 50px rgba(0,0,0,.3);
+    color:#3b435c;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    animation:b .2s;
+}
+
+@media (min-width:990px){
+    .hamburger-menu .hamburger-drawer{
+        display:none;
+    }
+}
+
+.hamburger-menu .hamburger-drawer__header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f4f5fb;
+    padding:16px;
+    border-bottom:1px solid #ebecf7;
+}
+
+.hamburger-menu .hamburger-drawer__title{
+    font-size:20px;
+    font-weight:700;
+}
+
+.hamburger-menu .hamburger-drawer__top-section{
+    padding:20px 0 0;
+    margin:0 20px
+}
+
+.hamburger-menu .hamburger-drawer__bottom-section{
+    padding:20px 0 0;
+    margin:0 20px;
+    border-top:1px solid #ebecf7
+}
+
+.hamburger-menu .hamburger-drawer__nav-link{
+    padding:0 0 20px
+}
+
+.hamburger-menu .hamburger-drawer a{
+    font-size:16px;
+    color:#3b435c;
+    font-weight:400;
+    text-decoration:none
+}
+
+.hamburger-menu .hamburger-drawer a:hover{
+    color:#656eff;
+    text-decoration:underline
+}
+
+.hamburger-menu .close-drawer-button:hover{
+    cursor:pointer
+}
+
+@keyframes a {
+    0%{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes b{
+    0%{right: -200px;}
+    to{right: 0;}
+}
+
+/* Menu bar CSS END */
+
+
+/* Footer Notifications CSS */
+
+.footer_notifications {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    overflow: hidden;
+}
+
+.notifications_label {
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 33px;
+    /* overflow: hidden; */
+    width: 200px;
+    /* border: 1px solid #888; */
+    padding: 5px;
+    box-shadow: 0px 0px 7px 0px #00000040;
+    border-radius: 7px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    right: -300px;
+    display: flex;
+    align-items: center;
+    /* place-content: center; */
+}
+
+.n_img {
+    width: 18%;
+    float: left;
+    height: 100%;
+}
+
+.n_img img {
+    width: 100%;
+}
+
+.n_close {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    cursor: pointer;
+}
+
+.n_label {
+    width: 77%;
+    float: left;
+    color: #656eff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    overflow-y: auto;
+    /* height: 100%; */
+    margin-left: 5%;
+}
+
+.n_label:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer Notifications CSS END */
+
+/* Decoration Elements CSS */
+.img_left_down {
+    height: 350px;
+    position: absolute; 
+    bottom: 0px;
+}
+
+.img_left_up {
+    height: 350px;
+    position: absolute; 
+    top: 0px;
+}
+
+.img_right_down {
+    height: 350px;
+    position: absolute; 
+    bottom: 0; 
+    right: 0;
+}
+/* Decoration Elements CSS */
+
+/* Navigation Elements CSS */
+.ct-btn-scroll {
+    /* width: 49px;
+    height: 49px; */
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
+/* Navigation Elements CSS */
+
+/* Main Wrap CSS */
+.my_background {
+    background-image: url(img/left-down.png), url(img/left-up.png), url(img/right-down.png);
+    background-position: left bottom, left top, right bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 590px;
+}
+.main_wrap {
+    width: 100%;
+    height: 70vh;
+}
+/* Main Wrap CSS */
+
+/* Slide one CSS */
+.slide_one_wrap {
+    width: 100%;
+    height: 70vh;
+}
+.slide_one_container {
+    margin-left: 27%;
+    margin-right: 27%;
+    padding-top: 8%;
+}
+.slide_one_title {
+    text-align: center;
+    font-size: 50px;
+}
+.slide_one_form {
+    padding-top: 30px; 
+    text-align: center;
+}
+/* Slide one CSS */
+
+/* SLide two CSS */
+.slider {
+    height: 400px;
+    padding: 30px;
+    margin-left: 200px;
+    text-align: center;
+}
+.slide {
+    width: 280px;
+    display: inline-block;
+    padding-top: 30px;
+    height: 250px;
+    margin: 50px 20px;
+    box-shadow: 0px 0px 7px 0px #00000040;
+    border-radius: 20px;
+}
+
+.slide_two_wrap {
+    width: 100%;
+    height: 70vh;
+}
+.slide_two_container {
+    padding-top: 5%;
+}
+.slide_two_title {
+    text-align: center;
+    font-size: 50px;
+}
+.webstore_wrap {
+    margin-left: 42%;
+    margin-right: 42%;
+}
+.webstore_wrap_mobile {
+    margin-left: 42%;
+    font-size: 12px;
+}
+/* Slide two CSS */
+
+/* Slide three CSS */
+.slide_three_wrap {
+    width: 100%;
+    height: 100vh;
+}
+.slide_three_container {
+    padding-top: 3%;
+}
+.slide_three_title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.accordion_container{
+    width: 550px;
+    padding-top: 60px;
+}
+
+.accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid #03b5d2;
+}
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+.accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    color: #03b5d2;
+}
+.accordion button:hover::after, .accordion button:focus::after {
+    cursor: pointer;
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+}
+.accordion button .accordion-title {
+    padding: 0 1.5em 0 0;
+    color: #000;
+}
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+    color: #03b5d2;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+    margin-bottom: 20px;
+}
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: opacity 200ms linear, max-height 200ms linear;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+ }
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+}
+/* Slide three CSS */
+
+/* Footer CSS */
+.footer {
+    clear: both;
+    position: relative;
+    margin-top: 150px;
+    text-align: center;
+}
+/* Footer CSS */
+
+/* Navigation arrow CSS  */
+.navigation_up {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.navigation_up > a > img {
+    width: 40px;
+}
+
+.navigation_down {
+    bottom: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.navigation_down > a >  img {
+    width: 40px;
+}
+
+/* Logo CSS */
+.logo_wrap {
+    padding-left: 10px;
+}
+
+.break {
+    clear:both;
+}
+
+.slide_one_mobile_wrap {
+    width: 100%;
+    height: 80%;
+}
+
+.slide_two_mobile_wrap {
+    width: 100%;
+    height: 90%;
+}
+
+.slide_three_mobile_wrap {
+    width: 100%;
+    height: 80%;
+}
+
+/** 
+* ********************
+* Responsive
+* ********************
+*/
+
+/* Custom */
+@media only screen and (max-width: 550px) {
+    .my_background {
+        background-image: url(img/left-down.png), url(img/left-up.png), url(img/right-down.png);
+        background-position: left bottom, left top, right bottom;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 190px;
+    }
+
+    .slide_one_wrap {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide_two_wrap {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide_three_wrap {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide_one_title {
+        font-size: 30px;
+    }
+
+    .slide_one_container {
+        padding-top: 20%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    input[type=url] {
+        padding: 1px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        line-height: 20px;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        box-shadow: 0 1px 1px rgba(0,0,0,.1);
+        /* max-width: 200px; */
+    }
+
+    .slide_two_title {
+        font-size: 30px;
+    }
+
+    .slide_two_container {
+        padding-top: 20%;
+    }
+
+    .slider {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        margin: 0 auto;
+        height: 350px;
+    }
+      
+    .slide {
+        width: 200px;
+        flex-shrink: 0;
+        height: 200px;
+    }
+    
+    .webstore_wrap_mobile {
+        margin-left: 25%;
+        font-size: 12px;
+    } 
+    
+    .webstore_wrap_mobile > img {
+        width: 35px;
+    }
+
+    .slide_three_title {
+        font-size: 30px;
+    }
+
+    .slide_three_container {
+        padding-top: 20%;
+        margin-bottom: 180px;
+    }
+
+    .accordion_container {
+        padding: 10px 30px;
+        width: 300px;
+    }
+    
+    .accordion button .accordion-title {
+        font-size: 14px;
+    }
+
+    .footer {
+        clear: both;
+        padding: 0;
+        bottom: 100px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .my_background {
+        background-image: url(img/left-down.png), url(img/left-up.png), url(img/right-down.png);
+        background-position: left bottom, left top, right bottom;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 190px;
+    }
+
+    .slide_one_wrap {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide_two_wrap {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide_three_wrap {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide_one_title {
+        font-size: 30px;
+    }
+
+    .slide_one_container {
+        padding-top: 20%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    input[type=text],input[type=url],input[type=submit],input[type=button]{
+        padding: 1px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        line-height: 20px;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        box-shadow: 0 1px 1px rgba(0,0,0,.1);
+        /* max-width: 400px; */
+    }
+
+    .slide_two_title {
+        font-size: 30px;
+    }
+
+    .slide_two_container {
+        padding-top: 20%;
+    }
+
+    .slider {
+        width: 300px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0 auto;
+        height: 350px;
+    }
+      
+    .slide {
+        width: 200px;
+        flex-shrink: 0;
+        height: 200px;
+    }
+
+    .webstore_wrap_mobile {
+        margin-left: 25%;
+        font-size: 12px;
+    }
+
+    .webstore_wrap_mobile > img {
+        width: 35px;
+    }
+
+    .slide_three_title {
+        font-size: 30px;
+    }
+    .slide_three_container {
+        padding-top: 20%;
+        margin-bottom: 180px;
+    }
+    .accordion_container {
+        padding: 10px 30px;
+        width: 300px;
+    }
+
+    .accordion button .accordion-title {
+        font-size: 14px;
+    }
+
+    .footer {
+        clear: both;
+        padding: 0;
+        bottom: 100px;
+        font-size: 14px;
+    }
+
+}
+
+/* Carousel CSS */
+  @media (hover: hover) {
+    .carousel__snapper {
+      animation-name: tonext, snap;
+      animation-timing-function: ease;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+  
+    .carousel__slide:last-child .carousel__snapper {
+      animation-name: tostart, snap;
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .carousel__snapper {
+      animation-name: none;
+    }
+  }
+  
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none;
+  }
+  
+  .carousel__navigation {
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-block;
+  }
+  
+.carousel__navigation-button-1 {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+}
+
+.carousel__navigation-button-2 {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+}
+
+.carousel__navigation-button-3 {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+}
+/* Carousel CSS */
