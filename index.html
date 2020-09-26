@@ -48,7 +48,6 @@
 		</div>
     </div>
 
-	
 	<div class="main_wrap" id="slide-main">
 		<!--This is the popuper logo-->
 		<div class="center_wrap">
@@ -58,17 +57,24 @@
 		</div>
 		
 
-		<!--Bookmark buttons-->
+        <!--Bookmark buttons-->
+        
 		<div class="main form-container" role="main">
 			<header>
 				<div class="container"></div>
-			</header>
-			<form action="/" id="shorturlform" method="POST">
+            </header>
+            
+            <form action="/" id="shorturlform" method="POST">
 				<div class="container form">
 					<fieldset>
-						<input type="url" id="Url" name="Url" required="" placeholder="www.example.com" autofocus="" />
-						<input type="submit" id="btngetshorturl" value="Pop it" onclick="myFun()" />
-					</fieldset>
+                        <div class="search-field-wrapper">
+                            <input type="url" id="Url" name="Url" required="" placeholder="www.example.com" autofocus="">
+                            <button class="submit-input" type="submit" id="btngetshorturl" value="" onclick="myFun()">
+                                <img id="search-icon" class="search-icon" src="img/search-icon.png">
+                            </button>
+                        </div>  
+                    </fieldset>
+                    
 					<div class="tabbuttons">
 						<!-- provide url you want to be popped up on clcik of button -->
 						<a> <button class="btn" onclick="myFunButton('https://www.google.com')" >Google</button> </a>
@@ -110,7 +116,11 @@
 	<script type="text/javascript" src="faq-assets/script.js"></script>
 
 	<!-- custom assets -->
-	<!-- <script type="text/javascript" src="custom.js"></script> -->
+    <!-- <script type="text/javascript" src="custom.js"></script> -->
+    
+    <!-- sense keyboard script-->
+    <script type="text/javascript" src="sense-keyboard.js"></script>
+    <script type="text/javascript" src="icon-hover.js"></script>
 
 <script type="text/javascript">
 var isMobile = checkMobile()
